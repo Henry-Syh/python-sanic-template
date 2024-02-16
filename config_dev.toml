@@ -1,0 +1,31 @@
+[SYSTEM]
+    [SYSTEM.REDIS]
+        Host    ='127.0.0.1'
+        Password=''
+        Port    =6379
+        Username=''
+        IS_AWS  ='false'         # false or true
+
+    [SYSTEM.MONGODB]
+        CONNECTION_STRING="mongodb://127.0.0.1:27017/?connectTimeoutMS=10000"
+    [SYSTEM.MOSQUITTO]
+        HOST     ="127.0.0.1"
+        KEEPALIVE=60
+        PASSWORD ="iampass"
+        PORT     =8081
+        USERNAME ="mqtt001"
+
+[API]
+    [API.AIOT]
+        ALERT="http://127.0.0.1:8881/api/v1/alert"
+
+[LINE]
+    TOKEN="" #可以保持空格
+
+[MOSQUITTO]
+    [MOSQUITTO.SUBSCRIBE]
+        POWERBOX9="S/powerbox9"
+
+[TOKEN]
+    SECRET   ="IT'S A BIG SECRET. SHHHHHH!"
+    VALIDTIME=3600
